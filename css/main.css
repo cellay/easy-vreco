@@ -1,5 +1,4 @@
 body{
-  padding-top: 3em;
   height: 100vh;
   background-image: url(../assets/images/viaje.jpg);
   display: flex;
@@ -8,8 +7,21 @@ body{
   flex-wrap: wrap;
 }
 
-.container_search{
-  opacity: 5;
+header {
+  background-color: #2bbbad;
+  color: whitesmoke;
+  font-family: 'VT323', monospace;
+  width: 100%;
+}
+
+header h3 {
+  float: right;
+  padding-right: 15px;
+}
+
+blockquote {
+  color: whitesmoke;
+  font-weight: 500
 }
 
 #map {
