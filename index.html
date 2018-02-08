@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>easy-vreco</title>
+    <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <input id="start" type="search">
-    <input id="finish" type="search">
-    <button id="track">Trace route!</button>
-    <div id="map"></div>
-    <button id="find">Find me</button>
+  <div class="row ">
+    <p class="col s12 col m6">Empieza a viajar y conocer nuevos lugares con Easy-vreco, solo necesitas tu smarthpone y una bici :D</p>
+    <div class="col s12 m6 container_search">
+      <input id="start" type="search">
+      <input id="finish" type="search">
+      <button id="track" class="waves-effect waves-light btn">Trace route!</button>
+      <button id="find" class="waves-effect waves-light btn">Find me</button>
+    </div>
+  </div>
+  <div class="row">
+    <div id="map" class="col s12"></div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6Wjl1gMxg1pJHeUfMpQmg1Ykt0hZQ3-4&callback=initMap&libraries=places"></script>
+    <script src="vendors/materialize/js/materialize.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
